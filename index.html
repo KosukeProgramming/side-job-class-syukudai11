@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>宿題10</title>
+    <!-- Googleフォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
@@ -24,6 +25,9 @@
                     <li class="header__item"><a href="#" class="header__item-link">GET STARTED</a></li>
                 </ul>
             </nav>
+            <!-- / header__nav -->
+
+
             <nav class="header__nav-sp">
                 <ul class="header__list-sp">
                     <li class="header__item-sp"><a href="#" class="header__item-link-sp">PRICING</a></li>
@@ -34,38 +38,59 @@
                     <li class="header__item-sp"><a href="#" class="header__item-link-sp">GET STARTED</a></li>
                 </ul>
             </nav>
+            <!-- / header__nav-sp -->
+
+
             <div class="ham-btn">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+            <!-- / ham-btn -->   
+
 
         </div>
+        <!-- / header__inner -->
+
     </header>
+    <!-- / header -->
+
     <main>
+
         <section class="fv">
+
             <div class="fv__text">
                 <h1 class="fv__title">Speed up your website<br>with lighter images</h1>
                 <p class="fv__des">image optimization for everyone</p>
                 <a href="" class="fv__btn">TRY FOR FREE</a>
             </div>
+            <!-- / fv__text -->
+
         </section>
+        <!-- / fv -->
+
     </main>
+    <!-- / main -->
+
+
     <script>
 
         // ハンバーガーボタンを押したときにメニューを開く
         ham_btn = document.getElementsByClassName('ham-btn');
         bars = document.getElementsByClassName('bar');
-        console.log(ham_btn);
-        console.log(bars);
+
         ham_btn[0].addEventListener('click',function(){
+
+            // メニューを表示させる
             document.getElementsByClassName('header__nav-sp')[0].classList.toggle('active');
+
+            // 三本線をバツに変形させる
             for (let index = 0; index < bars.length; index++) {
                 bars[index].classList.toggle('active');                                
             }
         });
 
-
     </script>
+
 </body>
 </html>
